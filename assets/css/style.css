@@ -1,0 +1,95 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "C8-body", sans-serif;
+  background-color: #232426;
+  color: #ffffff;
+  font-size: 1em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth !important;
+}
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+svg {
+  width: 30vw;
+  height: auto;
+}
+
+.client-wrap {
+  width: 81.25vw;
+  margin-left: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  border: 1px solid #fff;
+}
+.client-wrap .client-item-wrap:first-of-type {
+  margin-top: 3em;
+}
+.client-item-wrap {
+  position: relative;
+}
+.client-item-wrap:first-of-type,
+.client-item-wrap:nth-of-type(9) {
+  width: 12.5vw;
+  height: 12.5vw;
+}
+.client-item-wrap:nth-of-type(2),
+.client-item-wrap:nth-of-type(4),
+.client-item-wrap:nth-of-type(5),
+.client-item-wrap:nth-of-type(6),
+.client-item-wrap:nth-of-type(8) {
+  width: 15.625vw;
+  height: 15.625vw;
+}
+.client-item-wrap:nth-of-type(2) .client-item img,
+.client-item-wrap:nth-of-type(9) .client-item img {
+  width: auto;
+  height: 55%;
+}
+.client-item-wrap:nth-of-type(3),
+.client-item-wrap:nth-of-type(7) {
+  width: 18.75vw;
+  height: 18.75vw;
+}
+.client-item {
+  position: relative;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  height: 100%;
+}
+.client-item img {
+  position: absolute;
+  width: 55%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
