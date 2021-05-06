@@ -43,6 +43,7 @@ svg {
 
 .client-wrap {
   width: 81.25vw;
+  height: 85vh;
   margin-left: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -55,26 +56,28 @@ svg {
 .client-item-wrap {
   position: relative;
 }
-.client-item-wrap:first-of-type,
-.client-item-wrap:nth-of-type(9) {
+.client-item-wrap1,
+.client-item-wrap9,
+.client-item-wrap10 {
   width: 12.5vw;
   height: 12.5vw;
 }
-.client-item-wrap:nth-of-type(2),
-.client-item-wrap:nth-of-type(4),
-.client-item-wrap:nth-of-type(5),
-.client-item-wrap:nth-of-type(6),
-.client-item-wrap:nth-of-type(8) {
+.client-item-wrap2,
+.client-item-wrap4,
+.client-item-wrap5,
+.client-item-wrap6,
+.client-item-wrap8,
+.client-item-wrap11 {
   width: 15.625vw;
   height: 15.625vw;
 }
-.client-item-wrap:nth-of-type(2) .client-item img,
-.client-item-wrap:nth-of-type(9) .client-item img {
+.client-item-wrap2.client-item img,
+.client-item-wrap9.client-item img {
   width: auto;
   height: 55%;
 }
-.client-item-wrap:nth-of-type(3),
-.client-item-wrap:nth-of-type(7) {
+.client-item-wrap3,
+.client-item-wrap7 {
   width: 18.75vw;
   height: 18.75vw;
 }
