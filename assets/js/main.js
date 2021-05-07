@@ -77,4 +77,4 @@ var hoverMouse = function($el) {
   });
 };
 
-hoverMouse($('a'));
+hoverMouse($('.wrap'));
